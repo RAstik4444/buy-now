@@ -157,8 +157,20 @@
         font-weight: 400;
     }
 
-    .svg-modal-three {
-        color: var(--dark-color)
+    .svg-modal-ua {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        /* Odległość ikony od lewej krawędzi */
+        transform: translateY(-50%);
+    }
+
+    .svg-modal-mastercard {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        /* Odległość ikony od prawej krawędzi */
+        transform: translateY(-50%);
     }
 
     .btn-serv {
