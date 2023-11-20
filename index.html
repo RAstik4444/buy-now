@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>buy now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="./css/index.css" rel="stylesheet" />
+</head>
+
+<body class="container">
+    <button class=" " data-modal-open>Buy now</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="" width="28" height="28">
+                    <use href="./images/icons/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="container">
+                <h2 class="modal-header">
+                    <span class="modal-header-text-color" style="color: #FD9222;">Buy</span>
+                    <span class="modal-header-text-color">Now</span>
+                </h2>
+                <ul class="list our-team-ul">
+                    <li class="our-team-li"> <img alt="chocolate" src="/images/chocolate-modal-left.jpg" width="120"
+                            height="107" srcset="
+                              /images/chocolate-modal-left.jpg    1x,
+                              /images/chocolate-modal-left@2x.jpg 2x
+                            " />
+                        <div class="team-info">
+                            <button type="button" class="gram">100 g</button>
+                        </div>
+                    </li>
+                    <li class="our-team-li"> <img alt="chocolate" src="/images/chocolate-modal-center.jpg" width="120"
+                            height="107" srcset="
+                                                  /images/chocolate-modal-center.jpg    1x,
+                                                  /images/chocolate-modal-center@2x.jpg 2x
+                                                " />
+                        <div class="team-info">
+                            <button type="button" class="gram">200 g</button>
+                        </div>
+                    </li>
+                    <li class="our-team-li"> <img alt="chocolate" src="/images/chocolate-modal-right.jpg" width="120"
+                            height="107" srcset="
+                                                                      /images/chocolate-modal-right.jpg    1x,
+                                                                      /images/chocolate-modal-right@2x.jpg 2x
+                                                                    " />
+                        <div class="team-info">
+                            <button type="button" class="gram">300 g</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <form>
+                <div class="div-modal-form">
+                    <label class="label-modal" for="name">
+                        Name
+                    </label>
+                    <input id="name" name="name" type="text" placeholder="Name" class="personal-information" required>
+
+                    <label class="label-modal" for="surname">
+                        Surname
+                    </label>
+                    <input id="surname" name="surname" type="text" placeholder="Surname" class="personal-information"
+                        required>
+                </div>
+                <div class="div-modal-form">
+                    <label class="label-modal" for="email">
+                        Email
+                    </label>
+                    <div class="div-label-modal">
+                        <input id="email" name="email" type="text" placeholder="Enter your email" class="input-modal"
+                            required>
+                    </div>
+                </div>
+                <div class="div-modal-form">
+                    <label class="label-modal" for="phone number">
+                        Phone number
+                    </label>
+                    <div class="div-label-modal">+380
+                        <input id="phone number" name="phone number" type="text" placeholder="Phone number"
+                            class="input-modal" required>
+                        <svg width="32" height="24" class="svg-modal-three">
+                            <use href="/images/icons/icons.svg#icon-flag-ua"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="div-modal-form">
+                    <label class="label-modal" for="card number">
+                        Card number
+                    </label>
+                    <div class="div-label-modal">
+                        <input id="card number" name="card number" type="text" placeholder="Enter  card"
+                            class="input-modal" required>
+                        <svg width="32" height="24" class="svg-modal-three">
+                            <use href="/images/icons/icons.svg#icon-mastercard"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-div-four">
+                    <label for="user-comment" class="label-modal">Comment</label>
+                    <textarea type="text" id="user-comment" name="user-comment" placeholder="Enter text"
+                        class="textarea-modal"></textarea>
+                </div>
+                <button type="submit" class="btn-serv btn-order" data-modal-close>Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/modal.js"></script>
+</body>
+
+</html>
